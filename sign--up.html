@@ -1,0 +1,196 @@
+<html>
+    <style>
+        body {
+          background-image: url('background.jpg');
+          background-repeat: no-repeat;
+  background-size: cover;
+        }
+        button.mainbutton {
+  position: relative;
+  top:-10px;
+  width: 350px;
+  height: 100px;
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+} 
+
+button.mainbutton3 {
+  position: absolute;
+  top: 25px;
+  right: 10;
+  width: 150;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  color: yellow;
+}
+
+button.mainbutton4{
+  position: absolute;
+  top: 25px;
+  right: 170;
+  width: 150;
+  height: 100px;
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+}
+
+button.mainbutton5 {
+  position: absolute;
+  top: 25px;
+  right: 330;
+  width: 150;
+  height: 100px;
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+}
+
+
+SignUpparagraph {
+    color: yellow;
+    
+  font-weight: bold;
+  font-size: 90px;
+  font-style: italic;
+  text-align: center;
+  white-space: pre;
+
+  
+}
+SignUpparagraph3.signing {
+  position: absolute;
+  top: 200px;
+  right: 1000;
+  width: 500px;
+  height: 750px;
+  background-image: url("insidebackground.JPG" );
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid red;
+}
+p {
+    color: black;
+        
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+  
+}
+hh {
+    color: black  ;
+        
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  text-align: justify;
+  white-space: pre;
+
+  
+}
+hhh {
+    color: black  ;
+        
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+
+  
+}
+button.Sign-up {
+  position: absolute;
+  top: 600px;
+  right: 140;
+  width: 200;
+  height: 30px;
+  border: 2px bold black;
+}
+hiding {
+        
+        white-space: pre;
+      
+        white-space: pre;
+        font-style: italic;
+        font-size: 20px;
+        color: blue;
+      }
+</style>
+
+   <head>
+        <title>Sign Up </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   
+        <script>
+        $(document).ready(function(){
+          $("qq").mouseover(function(){
+         $(this).css('color', 'yellow');
+          });
+          $("qq").mouseout(function(){
+         $(this).css('color', 'black');
+          });
+        });
+        </script>
+    </head>
+    <body>
+        <button type="button"class="MainButton btn-link"  onclick="window.location.href = 'index.html'; " ><img src="HomeLogo.png" alt="HomeLogo.png" width="250" height="100"></button>
+        <SignUpparagraph>                  GoodEvents For you!</SignUpparagraph>
+        <button type="button"class="MainButton3 btn-link" id="MainButton3"  onclick="window.location.href = 'Sign--Up.html'; ">Sign-Up</button>
+        <button type="button"class="MainButton4 btn-link"  onclick="window.location.href = 'Contact--Us.html'; " >Contact Us</button>
+        <button type="button"class="MainButton5 btn-link"  onclick="window.location.href = 'About--Us.html'; " >About Us</button>
+<form>
+     <SignUpparagraph3 style="color:blue;" class="signing"><p>Sign Up</p><hh><br><br><br>
+        <qq>User-Name :     </qq><input type="text" id= "UserName" name= "User-Name" class="signing"
+        required="required" placeholder="Enter a User-Name" autofocus="autofocus"
+        size="25"
+        maxlength="50"/><br><br>
+        <qq>Password:         </qq><input type="password" id= "password" name= "username" class="signing"
+        required="required" placeholder="Enter a secure Password!" autofocus="autofocus"
+        size="25"
+        maxlength="50"/><br><br>
+        <qq>Email Address: </qq><input type="email" id= "email" name= "username" class="signing"
+        required="required" placeholder="Enter Your Email Address" autofocus="autofocus"
+        size="25"
+        maxlength="50"/><br><br>
+        <qq>Select Your Gender: </qq><hhh> Male: <input type="radio" id= "sex_m" name= "sex" class="signing"
+        value="male" />   Female: <input type="radio" id= "sex_f" name= "sex" class="signing
+        value="female" /> <br> </hhh>
+        <qq>Phone Number: </qq><input type="number" id= "number" name= "username"
+        required="required" placeholder="Enter Your Phone Number" autofocus="autofocus" class="signing"
+        size="25"
+        maxlength="50"/><br><br>
+        <script>
+  
+            function sendFunction() {
+                if (document.getElementById("UserName").value.length == 0 || document.getElementById("password").value.length == 0|| document.getElementById("email").value.length == 0|| document.getElementById("number").value.length == 0) {
+                    window.alert("Kindly fill all the required fields.");
+    } else {
+  
+            alert("You have registered with GoodEvent for You!, Enjoy. ");
+      
+    }
+    }
+    
+    
+            
+        
+            </script>
+
+        <button id="Sign-up" type="submit"class="Sign-up" onclick="sendFunction()" >Sign-Up</button><br><br><br>
+
+    </hh>
+    <hiding id="qeury">     Sign-Up in order to be registerd.</hiding>
+      
+    </SignUpparagraph3>
+    
+</form>
+    </body>
+</html>
